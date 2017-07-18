@@ -39,6 +39,7 @@ conn.close()
 
 
 
+
 '''
 pdata = pd.read_csv('train.csv')
 testdata = pd.read_csv('test.csv')
@@ -89,7 +90,7 @@ for dataset in combined:
     dataset.loc[ dataset['Fare'] > 31, 'Fare'] = 3
     dataset['Fare'] = dataset['Fare'].astype(int)
 
-    #remove feature
+#remove feature
 pdata=pdata.drop(['Parch','FareBand','SibSp'], axis=1)
 testdata=testdata.drop(['Parch','FareBand','SibSp'], axis=1)
 combine = [pdata, testdata]
@@ -140,12 +141,6 @@ Y_pred = gaussian.predict(X_test)
 acc_gaussian = round(gaussian.score(X_train, Y_train) * 100, 2)
 print('GNB',acc_gaussian)
 
-# Perceptron
-perceptron = Perceptron()
-perceptron.fit(X_train, Y_train)
-Y_pred = perceptron.predict(X_test)
-acc_perceptron = round(perceptron.score(X_train, Y_train) * 100, 2)
-print('Per',acc_perceptron)
 
 # Linear SVC
 linear_svc = LinearSVC()
