@@ -5,4 +5,4 @@ Recomendation system for similar movies with  collaborative filtering using movi
 
 Forecast of bitcoin price with recurrent neural networks.
 
-Document clustering with Td idf and K-means and t-Sne for visualization
+Document clustering with Td idf vectorizer and K-means and t-Sne for visualization
