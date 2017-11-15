@@ -6,3 +6,5 @@ Recomendation system for similar movies with  collaborative filtering using movi
 Forecast of bitcoin price with recurrent neural networks.
 
 Document clustering with Td idf vectorizer and K-means and t-Sne for visualization
+
+Data Wrangling with Spark and execution of Linear Regression algorithm with  Spark MLlib
